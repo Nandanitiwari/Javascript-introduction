@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops and Functions</title>
+    <script>
+     let marks = {
+        harry: 90,
+        shubh: 55,
+        shivika: 56,
+        ritika: 67,
+        shiv: 23,
+      }
+      //1. using for loop
+      for (let i=0; i<Object.keys(marks).length; i++) {
+        console.log("marks of " + Object.keys(marks)[i] + " are " + marks[Object.keys(marks)[i]]);
+      }
+
+      //2. using for-in loop
+      for (let key in marks) {
+        console.log("marks of " + key + " are " + marks[key]);
+      }
+
+      //3. write a program to print "try again" until the user enters the correct number
+      let cn = 4;
+       let i;
+       while(i!=cn){
+        i = prompt("Enter a number")
+        console.log("try again")
+    }
+    console.log("you have entered a correct number")
+    </script>
+  </head>
+  <body>
+    <div class="box">
+      <h3>loops in function</h3>
+    </div>
+  </body>
+</html>
