@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice set of string methods</title>
+    <script>
+      //q1.
+      let str = 'nan"';
+      console.log(str.length);
+
+      //q2.
+      const sentence = 'the quick brown For jumps over the lazy dog.';
+      const word = 'Fox';
+      console.log(sentence.includes(word));
+      console.log(`the word "${word}" ${sentence.includes(word) ? 'is' : 'is not' } int the sentence`);
+
+      //q3.
+      console.log(word.toLowerCase());
+
+      //q4
+      let que = "Please give Rs 1000";
+      let amount = que.slice("Please give Rs ".length);
+      let amo = que.slice(15);
+      console.log(amount);
+      console.log(amo);
+      console.log(typeof amount);
+
+      //q5
+      let friend = "shubham";
+      friend[3] = "o";  //can't change friend bcs string is immutable
+      console.log(friend);
+    </script>
+  </head>
+  <body>
+    <div class="box">
+      <h5>practice set of strings</h5>
+    </div>
+  </body>
+</html>
