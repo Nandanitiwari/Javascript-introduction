@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+    <script>
+let name = "Gunnu\""      // {\"} is one character
+console.log(name.length);
+console.log(name.toUpperCase());
+console.log(name.toLowerCase());
+console.log(name.slice(2,4))
+console.log(name.slice(2))
+
+let info = "nannu bhai";
+let newinfo = info.replace("bhai", "bhau");
+console.log(newinfo);
+
+console.log(name.concat(" is a friend of ", info));
+console.log(`${name}` + `${info}`)
+
+let friend = "   pappu   can't dance salla     ";
+console.log(friend.trim());  //remove starting and end space
+
+//immutable
+let fr = "Nandani";
+console.log(fr[0]);
+console.log(fr[1]);
+console.log(fr[2]);
+console.log(fr[3]);
+console.log(fr[4]);
+
+//using for loop
+for(i=0; i<=6; i++){
+    console.log(fr[i]);
+}
+    </script>
+</head>
+<body>
+    <div class="box">
+       <h2>String method</h2>
+
+       <h4>String are immutable. Inorder to access the characters at an index we use the following Syntax</h4>
+    </div>
+</body>
+</html>
