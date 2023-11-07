@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Methods of array</title>
+    <script>
+      let num = [1, 2, 3, 4, 5];
+      let b = num.toString(); //1. converts an array to string
+      console.log(b);
+      console.log(b, typeof b);
+
+      let c = num.join("_"); //join all the array elements using a separator
+      console.log(c);
+      console.log(c, typeof c);
+
+      let r = num.pop(); // returns the last element
+      console.log(num, r);
+
+      let s = num.push(78);  //push a new element in array
+      console.log(num, s);
+
+      let t = num.shift();    //remove first element
+      console.log(num, t);
+
+      let q = num.unshift(90);  //add element to the beginning
+      console.log(num, q);
+    </script>
+  </head>
+  <body>
+    <div class="body"></div>
+  </body>
+</html>
