@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loops in array</title>
+    <script>
+      let num = [3, 6, 9, 45];
+      //for loop
+      for (i = 0; i < num.length; i++) {
+        console.log(i + " number is " +  num[i]);
+      }
+
+      //for-each loop
+      num.forEach((Element)=>{
+        //calls a function, once for each element array
+        console.log("square of " + Element + " is " + Element*Element);
+      })
+
+      //Array.from
+      let name = "Harry"
+      let arr = Array.from(name)
+      console.log(arr);
+
+      //for-of = print the value
+      for ( let i of num){
+        console.log(i);
+      }
+      //for-in = print the key
+      for ( let i in num){
+        console.log(i);
+      }
+    </script>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
