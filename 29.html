@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice of Array question</title>
+    <script>
+
+//1.create an array of numbers and take input from useer to add numbers to this array
+      let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    //   let a = prompt("enter a number");
+    //   a = Number.parseInt(a);
+    //   arr.push(a);
+    //   console.log(arr);
+
+//keep adding numbers to the array in 1 until 0 is added to the array
+    //   let a;
+    //   do {
+    //    a = prompt("enter a number");
+    //   a = Number.parseInt(a);
+    //   arr.push(a);
+    //   console.log(arr);
+    //   }while(a!=0)
+
+//filter for numbers divisible by 10 from a given array
+    let arr2 = [40, 23, 70, 56, 7, 80, 500, 66];
+      let a2 = arr2.filter((a) => {
+        return a%10 == 0;
+      });
+      console.log(a2, arr2);
+
+//Create an array of square to given numbers
+    let ar = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    ar.forEach((Element)=>{
+        console.log("square of " + Element + " is " + Element*Element);
+      })
+
+ //use reduce to calculate factorial of a given numbers from an array of first n natuaral numbers(n being the numbers whose factorial needs to be calculated)
+ let arr3 = [5, 2, 4, 2, 1, 3, 8, 6];
+      let newarr3 = arr3.reduce((h1, h2) => {
+        return h1 * h2;
+      });
+      console.log(newarr3);
+      
+    </script>
+  </head>
+  <body>
+    <div class="box">
+      <h1>practice of array question</h1>
+    </div>
+  </body>
+</html>
