@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>some more methods of array</title>
+    <script>
+      // let num = [1, 2, 3, 4, 5, 6, 7, 8];
+      // console.log(num);
+      // console.log(num.length);
+      // delete num[0];
+      // console.log(num.length);
+
+      // let num_more = [11, 12, 13, 14, 15, 16, 17, 18];
+      // let newArray = num.concat(num_more);
+      // console.log(newArray);
+
+      //sort method
+    //   let compare = (a, b) => {
+    //     return a - b;
+    //   }
+      let nub = [12, 92, 73, 24, 95, 46, 67, 8];
+    //   nub.sort(compare);  //alphabatically sort the elements from 1st digit of each number
+    //   console.log(nub);
+    //   nub.reverse();
+      console.log(nub);
+      
+
+      //Splice and Slice
+      //splice(start, delete no. of element, new elements list)
+    //   let deletedValues = nub.splice(2, 3, 1021, 1022, 1023, 1024, 1025);  //used to add new items in an array
+    //   console.log(nub);
+    //   console.log(deletedValues);
+
+      //slice()
+      let newNub = nub.slice(3, 5) //slices out a piece from an array.it did'nt modify the existing array It creates a new array
+      console.log(newNub);
+
+    </script>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
