@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js console objects</title>
+    <script>
+      console.log(console);
+      console.error("this is an error");
+      console.assert(5 > 56);
+      console.assert(545 > 56);
+      console.assert(5 > 56);
+
+      obj = { a: 1, b: 2, c: 3 };
+      console.table(obj);
+      console.warn("hey please don't waste food");
+      console.info("hey this is an important info");
+      console.time("p1");
+      console.timeEnd("p1");
+
+      console.time("forLop")
+      for(let i = 0; i<5; i++){
+        console.log(233)
+      }
+      console.timeEnd("forLop")
+
+      console.time("whileLop");
+      let i = 0;
+      while(i<5){
+        console.log(233);
+        i++;
+      }
+      console.timeEnd("whileLop");
+
+
+    </script>
+  </head>
+  <body>
+    <h1>js console objects</h1>
+  </body>
+</html>
