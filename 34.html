@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice</title>
+    <script>
+      let age = prompt("what is your age");
+      age = Number.parseInt(age);
+      let runAgain = true;
+
+      while (runAgain) {
+        const canDrive = (age) => {
+          return age >= 18 ? true : false;
+        };
+        if (age < 0) {
+          alert("please enter valid age");
+          console.error("please enter the valid age");
+        } 
+        else if (age > 0 && age < 18) {
+          alert("Yor are a kid now you cant drive");
+        } 
+        else if (canDrive(age)) {
+          alert("you can drive");
+        } 
+        else {
+          alert("please enter valid age");
+        }
+        runAgain = prompt("Do You want to play again");
+      }
+    </script>
+  </head>
+  <body>
+    <p>
+      Q1. Write a program using promt function to take input of age as a value
+      from the user and use alert to tell him if he can drive!
+    </p>
+    <p>
+      Q2. In q1 use confirm to ask the user if he wants to see the promt again
+    </p>
+    <p>
+      Q3. In q1 use console.error to log the error if the age entered is
+      negative
+    </p>
+   
+  </body>
+</html>
