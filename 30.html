@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess the number</title>
+    <script>
+      let num = Math.random() * 10 + 1;
+      num = Number.parseInt(num);
+      let a;
+      let choice = 0;
+
+      do {
+        a = prompt("enter a number between 1 to 10");
+        a = Number.parseInt(a);
+        choice++;
+
+        if (a == num) {
+          console.log(a);
+             confirm("you entered the correct number");
+          console.log("you entered the correct number");
+          console.log("the actual number is " + a);
+          console.log(
+            "you take " + choice + " gusses to print the correct value"
+          );
+        } else if (a < num && a > 0) {
+          console.log(a);
+          alert("you entered the smaller number then the original number");
+          console.log(
+            "you entered the smaller number then the original number"
+          );
+        } else if (a > num && a < 10) {
+          console.log(a);
+          alert("you entered the greater number then the original number");
+          console.log(
+            "you entered the greater number then the original number"
+          );
+
+        } else {
+          console.log(a);
+          alert("wrong input");
+          console.log("wrong input");
+
+        }
+      } while (num != a);
+    </script>
+  </head>
+  <body>
+    <div class="box">
+      <p>
+        write a javascript program to generate a random number and store it in a
+        variable. The Programe then takes an input from the user to tell them
+        whether the guess was correct, greaterr or leser than the original
+        number.
+      </p>
+
+      <p>
+        100-(number of guesse) is the score of user the program is expected to
+        terminals once the number is gassed. Number should be between 1 to 100.
+      </p>
+    </div>
+  </body>
+</html>
